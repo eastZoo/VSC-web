@@ -1,8 +1,8 @@
+import Header from "./Layout/Header";
+
 function App() {
   return (
-    <div>
-      Hello VSC
-    </div>
+      <Header />
   );
 }
 
