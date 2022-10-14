@@ -1,0 +1,8 @@
+.main .inner {
+  display: flex;
+}
+
+.main .inner .inner__right {
+  width: 100%;
+  background-color: #1E1E1E;
+}

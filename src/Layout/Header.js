@@ -39,6 +39,19 @@ const Header = () => {
         <div className='title'>
           <h3>Header.js - Untitled (Wordkspace) - Visual Studio Code</h3>
         </div>
+        <div className='icons'>
+          <div className="media-icon">
+              <div class="material-icons">library_music</div>
+              <div class="material-icons">video_library</div>
+              <div class="material-icons">collections_bookmark</div>
+              <div class="material-icons">library_add</div>
+          </div>
+          <div className="window">
+              <div class="material-icons">minimize</div>
+              <div class="material-icons">filter_none</div>
+              <div class="material-icons">close</div>
+            </div>
+        </div>   
       </div>
     </div>
   )

@@ -48,16 +48,20 @@ ul{
 /* a 태그 쓰기전 글색깔 */
 .header .sub-menu ul.menu li{
   position: relative;
-  padding: 0 10px;
-  font-size: 14px;
+
 }
 .header .sub-menu ul.menu li a{
   display: block;
   color: #CCC;
+  font-size: 14px;
+  padding: 0 7px;
 }
+
 .header .sub-menu ul.menu li a:hover{
   background-color: #454646;
-  border-radius: 5px;
+  border-radius: 3px;
+
+  cursor: pointer;
 }
 
 .header .inner .title {
@@ -69,3 +73,32 @@ ul{
   text-align: center;
   font-size: 12px;
 }
+.header .inner .icons .media-icon{
+  color: #CCC;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 140px;
+  margin: auto;
+  transition: 0.4s;
+}
+.header .inner .icons .window{
+  color: #CCC;
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+}
+
+.header .inner .icons .media-icon .material-icons{
+  font-size: 18px;
+  margin: 0 2px;
+}
+.header .inner .icons .window .material-icons{
+  padding: 0 13px;
+  font-size: 16px;
+}
+
