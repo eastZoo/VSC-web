@@ -13,14 +13,31 @@ const Header = () => {
             <li>
               <a href='/'>File</a>
             </li>
-            <li>Edit</li>
-            <li>Selection</li>
-            <li>View</li>
-            <li>Go</li>
-            <li>Run</li>
-            <li>Terminal</li>
-            <li>Help</li>
+            <li>
+              <a href='/'>Edit</a>
+            </li>
+            <li>
+              <a href='/'>Selection</a>
+            </li>
+            <li>
+              <a href='/'>View</a>
+            </li>
+            <li>
+              <a href='/'>Go</a>
+            </li>
+            <li>
+              <a href='/'>Run</a>
+            </li>
+            <li>
+              <a href='/'>Terminal</a>
+            </li>
+            <li>
+              <a href='/'>Help</a>
+            </li>
           </ul>
+        </div>
+        <div className='title'>
+          <h3>Header.js - Untitled (Wordkspace) - Visual Studio Code</h3>
         </div>
       </div>
     </div>

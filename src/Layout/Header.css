@@ -4,59 +4,68 @@ img {
 a {
   text-decoration: none;
 }
+ul{
+  list-style: none;
+}
 
 .header {
   width: 100%;
   height: 30px;
   background-color: #3c3c3c;
   z-index: 10;
+  top: 0;
 }
 
 .header .inner {
   margin: 0 auto;
   position: relative;
+  height: 30px;
 }
 
 .header .logo {
   left: 10px;
+  top: 2px;
   margin: auto;
   position: absolute;
 }
 
 .header .logo img{
-  width: 19px;
-  display: block;
+  width: 18px;
 }
 
 /* 헤더 메뉴 */
 .header .sub-menu {
   display: flex;
   position: absolute;
-  top: 2px;
+  top: 7px;
+  left: 35px;
 }
 
 .header .sub-menu ul.menu{
   display: flex;
-  /* margin-left: 20px;
-  margin-top: 0; */
   margin: auto;
 }
 /* a 태그 쓰기전 글색깔 */
 .header .sub-menu ul.menu li{
-  margin-right: 20px;
-  list-style: none;
-  color: #ccc;
+  position: relative;
+  padding: 0 10px;
+  font-size: 14px;
 }
 .header .sub-menu ul.menu li a{
-  width: 35px;
   display: block;
-  color: #ccc;
-  background-color: orange;
-  padding: 2px;
-  text-align: center;
-  box-sizing: border-box;
+  color: #CCC;
 }
 .header .sub-menu ul.menu li a:hover{
   background-color: #454646;
   border-radius: 5px;
+}
+
+.header .inner .title {
+  color: #CCC;
+  position: relative;
+  padding-top: 7px;
+}
+.header .inner .title h3{
+  text-align: center;
+  font-size: 12px;
 }
