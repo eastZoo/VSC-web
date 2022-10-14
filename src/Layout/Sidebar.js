@@ -1,33 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Link } from "react-router-dom";
+import Sidepop from '../components/SidePop/Sidepop'
+import Main from './Main';
 import './Sidebar.css'
 
-const Sidebar = () => {
+const Sidebar = (children) => {
+  const[isOpen ,setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen (!isOpen);
+    console.log(isOpen)
+  }
   return (
     <div className='sidebar'>
-        <div className='side-menu'>
-          <div className='icon'>
+        <div className='main_side'>
             <ul className='menu'>
-              <li>
+              <li onClick={toggle}>
                 <div class="material-icons">file_copy</div>
               </li>
               <li>
-                <div class="material-icons">search</div>
+                <Link to='/twitch'>
+                  <div class="material-icons">search</div>
+                </Link>
               </li>
               <li>
-                <div class="material-icons">rebase_edit</div>
+                <Link to='/cafe'>
+                  <div class="material-icons">rebase_edit</div>
+                </Link>
               </li>
               <li>
-                <div class="material-icons">adb</div>
+                <Link to='/tistory'>
+                  <div class="material-icons">adb</div>
+                </Link> 
               </li>
               <li>
-                <div class="material-icons">extension</div>
+                <Link to='/code'>
+                  <div class="material-icons">extension</div>
+                </Link> 
               </li>
             </ul>
-          </div>
-      </div>
-      <div className='popup__menu'>
-        
-      </div>
+        </div>
+        <div className='sub_side'>
+          sub_side
+        </div>
     </div>
   )
 }

@@ -1,8 +1,16 @@
+.main {
+  position: absolute;
+  width: 1870px;
+  height: 917px;
+  left: 50px;
+  background-color: #1E1E1E;
+}
 .main .inner {
-  display: flex;
+
 }
 
 .main .inner .inner__right {
   width: 100%;
+  height: 100%;
   background-color: #1E1E1E;
 }
