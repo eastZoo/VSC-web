@@ -2,6 +2,7 @@
   position: absolute;
   background-color: #333;
   height: 917px;
+  width: 100%;
   display: flex;
 }
 .sidebar .main_side{
@@ -37,4 +38,8 @@
 .sidebar .sub_side {
   background-color: #252526;
   width: 225px;
+}
+
+.sidebar .content {
+  width: 100%;
 }
