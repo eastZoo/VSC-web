@@ -1,3 +1,61 @@
 .body{
  display: flex;
 }
+.container{
+  width: 100%;
+}
+.sidebar{
+  position: relative;
+  height: 917px;
+  width: 100%;
+  display: flex;
+}
+.sidebar .main_side{
+  width: 50px;
+  background-color: #333;
+  position: relative;
+}
+
+.sidebar .main_side .material-icons{
+  font-size: 25px;
+  margin: 0 2px;
+  color: #848484;
+}
+
+.sidebar .main_side ul.menu{
+  margin: auto;
+}
+
+.sidebar .main_side ul.menu li{
+  padding: 10px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar .main_side ul.menu li:hover .material-icons {
+  color: #f5f5f5;
+  border-left-style: 2px solid #ccc;
+}
+.sidebar .side-menu ul.menu li:active {
+  border-left: 2px solid #ccc;
+  padding-left: -2px;
+  
+}
+
+.sidebar .sub_side {
+  background-color: #252526;
+  width: 190px;
+  transition: 1s;
+} 
+
+.sidebar .sub_side_close {
+  background-color: #252526;
+  width: 0;
+  transition: width 0.5s;
+}
+
+.youtube {
+  width: calc(100%-240px);
+  top: 10px;
+  left: 50px;
+}

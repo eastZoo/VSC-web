@@ -1,12 +1,13 @@
 .sidebar{
   position: absolute;
-  background-color: #333;
   height: 917px;
-  width: 100%;
+  width: 235px;
   display: flex;
+  z-index: 999;
 }
 .sidebar .main_side{
   width: 50px;
+  background-color: #333;
 }
 
 .sidebar .main_side .material-icons{
@@ -37,9 +38,12 @@
 
 .sidebar .sub_side {
   background-color: #252526;
-  width: 225px;
+  width: 185px;
+  transition: 1s;
 }
 
-.sidebar .content {
-  width: 100%;
+.sidebar .sub_side_close {
+  background-color: #252526;
+  width: 0;
+  transition: width 0.5s;
 }

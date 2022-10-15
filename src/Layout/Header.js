@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './Header.css'
 
 const Header = () => {
@@ -11,28 +12,22 @@ const Header = () => {
         <div className='sub-menu'>
           <ul className='menu'>
             <li>
-              <a href='/'>File</a>
+              <Link to='/'>Main</Link>
             </li>
             <li>
-              <a href='/'>Edit</a>
+              <Link to='/youtube'>Youtube</Link>
             </li>
             <li>
-              <a href='/'>Selection</a>
+              <Link to='/twitch'>Twitch</Link>
             </li>
             <li>
-              <a href='/'>View</a>
+              <Link to='/tistoy'>Tistory</Link>
             </li>
             <li>
-              <a href='/'>Go</a>
+              <Link to='/cafe'>Cafe</Link>
             </li>
             <li>
-              <a href='/'>Run</a>
-            </li>
-            <li>
-              <a href='/'>Terminal</a>
-            </li>
-            <li>
-              <a href='/'>Help</a>
+              <Link href='/'>Help</Link>
             </li>
           </ul>
         </div>
