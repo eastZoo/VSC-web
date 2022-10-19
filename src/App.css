@@ -1,61 +1,137 @@
 .body{
  display: flex;
 }
+
+/* 메인 페이지 body */
 .container{
-  width: 100%;
-}
-.sidebar{
   position: relative;
-  height: 917px;
-  width: 100%;
   display: flex;
 }
-.sidebar .main_side{
+.container .sidebar{
   width: 50px;
+  height: 917px;
+}
+.container .sidebar .main_side{
   background-color: #333;
   position: relative;
+  z-index: 9;
+  height: 100%;
 }
 
-.sidebar .main_side .material-icons{
+.container .sidebar .main_side .material-icons{
   font-size: 25px;
   margin: 0 2px;
   color: #848484;
 }
 
-.sidebar .main_side ul.menu{
+.container .sidebar .main_side ul.menu{
   margin: auto;
 }
 
-.sidebar .main_side ul.menu li{
+.container .sidebar .main_side ul.menu li{
   padding: 10px 0;
   text-align: center;
   cursor: pointer;
 }
 
-.sidebar .main_side ul.menu li:hover .material-icons {
+.container .sidebar .main_side ul.menu li:hover .material-icons {
   color: #f5f5f5;
   border-left-style: 2px solid #ccc;
 }
-.sidebar .side-menu ul.menu li:active {
+.container .sidebar .side-menu ul.menu li:active {
   border-left: 2px solid #ccc;
   padding-left: -2px;
   
 }
 
-.sidebar .sub_side {
-  background-color: #252526;
-  width: 190px;
-  transition: 1s;
-} 
 
-.sidebar .sub_side_close {
-  background-color: #252526;
-  width: 0;
-  transition: width 0.5s;
+/* 트위치 */
+.twitch {
+  position: relative;
+  background-color: #1e1e1e;
+  
+}
+.twitch .inner {
+  width: 1870px;
+  height: 30px;
+  
 }
 
-.youtube {
-  width: calc(100%-240px);
-  top: 10px;
-  left: 50px;
+.twitch .r_empty{
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #252526;
+  height: 35px;
+  width: 100%;
+}
+
+.twitch .inner ul.name_menu{
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+}
+
+.twitch .inner ul.name_menu .item{
+  display: flex;
+  text-align: center;
+  background-color: #2d2d2d;
+}
+
+.twitch .inner ul.name_menu .item img{
+  width: 35px;
+  height: 35px;
+  padding-left: 3px;
+  cursor: pointer;
+}
+.twitch .inner ul.name_menu .item::before {
+  content: "";
+  width: 1px;
+  height: 30px;
+  background-color: #1e1e1e;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.twitch .inner ul.name_menu .item:first-child::before {
+  display: none;
+}
+.twitch .inner ul.name_menu .item .item__name__active,
+.twitch .inner ul.name_menu .item .item__name{
+  padding: 10px 20px 10px 20px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  width: 150px;
+  color: #969696;
+}
+
+/* hover시 item__name에만 스타일을 추가하는 것이아니라 item__content부분에도 
+추가해줄 수 있어야하기 때문에 item에 hover를 추가 */
+/* 클릭 됬을때도 hover와 같은 스타일이기때문에 추가 */
+.twitch .inner ul.name_menu .item .item__name__active,
+.twitch .inner ul.name_menu .item:hover .item__name {
+  background-color: #1e1e1e;
+  color: #FFF;
+  border-radius: 6px 6px 0 0;
+  cursor: pointer;
+}
+
+.twitch .inner .twitch__set{
+  position: relative;
+  width: 1870px;
+  top: 50px;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.twitch .inner .twitch__set .twich__player{
+  top: 35px;
+  bottom: 0;
+}
+.twitch .inner .twitch__set .twitch__chat{
+  right: 155px;
+  top: 35px;
 }

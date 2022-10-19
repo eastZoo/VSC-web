@@ -32,7 +32,7 @@ const Header = () => {
           </ul>
         </div>
         <div className='title'>
-          <h3>Header.js - Untitled (Wordkspace) - Visual Studio Code</h3>
+          <div className='title__'>Header.js - Untitled (Wordkspace) - Visual Studio Code</div>
         </div>
         <div className='icons'>
           <div className="media-icon">

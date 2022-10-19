@@ -9,7 +9,6 @@ ul{
 }
 
 .header {
-  width: 100%;
   height: 30px;
   background-color: #3c3c3c;
   z-index: 10;
@@ -20,6 +19,7 @@ ul{
   margin: 0 auto;
   position: relative;
   height: 30px;
+  width: 100%;
 }
 
 .header .logo {
@@ -37,8 +37,8 @@ ul{
 .header .sub-menu {
   display: flex;
   position: absolute;
-  top: 7px;
-  left: 35px;
+  left: 40px;
+  top: 4px;
 }
 
 .header .sub-menu ul.menu{
@@ -54,23 +54,27 @@ ul{
   display: block;
   color: #CCC;
   font-size: 14px;
-  padding: 0 7px;
+  padding: 3px 8px;
+  margin-top: 0;
 }
 
 .header .sub-menu ul.menu li a:hover{
   background-color: #454646;
-  border-radius: 3px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
 .header .inner .title {
   color: #CCC;
-  position: relative;
+  position: absolute;
   padding-top: 7px;
+  width: 400px;
+  font-size: 14px;
+  right: 40%;
 }
-.header .inner .title h3{
+.header .inner .title .title__{
+  font-size: 13px;
   text-align: center;
-  font-size: 12px;
 }
 .header .inner .icons .media-icon{
   color: #CCC;
