@@ -1,3 +1,6 @@
 ## 토글관련
 https://garve32.tistory.com/53
 
+## 트위치 api 관련
+인증 및 라이브 확인
+https://lwndnjs93.tistory.com/97

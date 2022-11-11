@@ -1,0 +1,14 @@
+.twitch__container{
+  display: flex;
+  background-color: #1e1e1e;
+}
+
+.twitch__container .twich__player{
+  cursor: pointer;
+}
+.twitch__container .isegye__wrapper{}
+
+.twitch__container .isegye__wrapper .isegye__list{
+  cursor: pointer;
+  z-index: 1000;
+}

@@ -1,12 +1,8 @@
-
 import React from 'react'
-
 
 const Youtube = () => {
   return (
-          <div >
-            Youtube
-          </div>
+    <div>Youtube</div>
   )
 }
 

@@ -7,9 +7,9 @@ import Twitch from "./components/Twitch";
 import Tistory from "./components/Tistory";
 import Cafe from "./components/Cafe";
 import './App.css'
+import Help from "./components/Help";
 
 function App() {
-
   return (
     <>
       <Router>
@@ -30,6 +30,9 @@ function App() {
           </Routes>
           <Routes>
             <Route path="/cafe" element={<Cafe />}></Route>
+          </Routes>
+          <Routes>
+            <Route path="/help" element={<Help />}></Route>
           </Routes>
         </section>
       </Router>
